@@ -1,4 +1,5 @@
 "use server";
+
 import { z } from "zod";
 import postgres from "postgres";
 import { revalidatePath } from "next/cache";
@@ -49,11 +50,13 @@ export async function createInvoice(prevState: State, formData: FormData) {
   }
   const amountInCents = validatedFields.data.amount * 100;
 
+  const { customerId, status } = validatedFields.data;
+
   const date = new Date().toISOString().split("T")[0];
   try {
     await sql`
     INSERT INTO invoices (customer_id, amount, status, date)
-    VALUES (${validatedFields.data.customerId}, ${amountInCents}, ${status}, ${date})
+    VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
   `;
   } catch (error) {
     console.error(error);
@@ -69,9 +72,11 @@ export async function createInvoice(prevState: State, formData: FormData) {
 // Use Zod to update the expected types
 const UpdateInvoice = FormSchema.omit({ id: true, date: true });
 
-// ...
-
-export async function updateInvoice(id: string, formData: FormData) {
+export async function updateInvoice(
+  id: string,
+  prevState: State,
+  formData: FormData,
+) {
   const validatedFields = UpdateInvoice.safeParse({
     customerId: formData.get("customerId"),
     amount: formData.get("amount"),
@@ -85,7 +90,7 @@ export async function updateInvoice(id: string, formData: FormData) {
     };
   }
 
-  const { amount, customerId } = validatedFields.data;
+  const { amount, customerId, status } = validatedFields.data;
 
   const amountInCents = amount * 100;
   try {
@@ -95,7 +100,7 @@ export async function updateInvoice(id: string, formData: FormData) {
     WHERE id = ${id}
   `;
   } catch (e) {
-    console.error("error updating");
+    console.error("error updating:", e);
     return {
       message: "error updating database",
     };
@@ -106,13 +111,13 @@ export async function updateInvoice(id: string, formData: FormData) {
 }
 
 export async function deleteInvoice(id: string) {
-  throw new Error("fake delete error");
   try {
     await sql`
         DELETE FROM invoices
         WHERE id=${id}
         `;
   } catch (e) {
+    console.error("delete error", e);
     return {
       message: "error deleting invoice",
     };
