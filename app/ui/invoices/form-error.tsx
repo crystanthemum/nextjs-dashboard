@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 const FormError = (errorKey: string[]) => {
   return (

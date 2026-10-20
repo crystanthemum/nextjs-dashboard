@@ -7,12 +7,11 @@ import {
   CurrencyDollarIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
+import { updateInvoice, State } from "@/app/lib/actions";
 import { useActionState } from "react";
-import { State } from "@/app/lib/actions";
 import FormError from "./form-error";
 import Link from "next/link";
 import { Button } from "@/app/ui/button";
-import { updateInvoice } from "@/app/lib/actions";
 
 export default function EditInvoiceForm({
   invoice,
