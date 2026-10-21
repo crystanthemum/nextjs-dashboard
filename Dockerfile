@@ -1,6 +1,7 @@
 # specify the node base image with your desired version node:<version>
 FROM node:22-alpine AS base
-# replace this with your application's default port
+
+# goes to the app directory, like a cd terminal command
 WORKDIR /app
 
 
@@ -11,6 +12,7 @@ RUN apk add --no-cache libc6-compat
 COPY package*.json ./
 
 # ci used instead of install bc it is faster, more reliable, strictly follows package log json
+# downloading dependency first before we get our code -copied the package.json and install those app dependencies
 RUN npm i
 
 # Builder
@@ -18,6 +20,7 @@ RUN npm i
 FROM base AS builder
 COPY --from=deps /app/node_modules ./node_modules
 
+# copy our code into the image but without ^node_modules dir and file because it's really big^
 COPY . .
 
 RUN npm run build
@@ -41,4 +44,4 @@ EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
-CMD ["node", "server.js"]
+CMD ["npm", "start"]
