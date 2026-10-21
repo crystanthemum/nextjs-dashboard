@@ -6,12 +6,12 @@ WORKDIR /app
 
 # Dependencies
 FROM base AS deps 
-RUN apd add --no-cache libc6-compat
+RUN apk add --no-cache libc6-compat
 
-COPY package*.json package-lock.json ./
+COPY package*.json ./
 
 # ci used instead of install bc it is faster, more reliable, strictly follows package log json
-RUN npm ci
+RUN npm i
 
 # Builder
 
