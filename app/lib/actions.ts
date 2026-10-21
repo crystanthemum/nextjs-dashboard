@@ -118,9 +118,7 @@ export async function deleteInvoice(id: string) {
         `;
   } catch (e) {
     console.error("delete error", e);
-    return {
-      message: "error deleting invoice",
-    };
+    throw new Error("error deleting invoice");
   }
 
   revalidatePath("/dashboard/invoices");

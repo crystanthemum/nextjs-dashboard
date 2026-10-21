@@ -1,5 +1,8 @@
 import SideNav from "@/app/ui/dashboard/sidenav";
 
+// Pages here query the DB and sit behind auth; don't prerender at build time.
+export const dynamic = "force-dynamic";
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
