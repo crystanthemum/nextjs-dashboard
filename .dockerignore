@@ -1,7 +1,8 @@
 node_modules
-Dockerfile
-.dockerignore
 .next
 .git
-README.md 
+.env*
+Dockerfile
+.dockerignore
+README.md
 npm-debug.log
