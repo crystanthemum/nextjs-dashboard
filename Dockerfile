@@ -13,7 +13,7 @@ COPY package*.json ./
 
 # ci used instead of install bc it is faster, more reliable, strictly follows package log json
 # downloading dependency first before we get our code -copied the package.json and install those app dependencies
-RUN npm i
+RUN npm ci
 
 # Builder
 
