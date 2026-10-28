@@ -11,9 +11,9 @@ RUN apk add --no-cache libc6-compat
 
 COPY package*.json ./
 
-# ci used instead of install bc it is faster, more reliable, strictly follows package log json
+# ci (clean install) used instead of install bc it is faster, more reliable, strictly follows package log json
 # downloading dependency first before we get our code -copied the package.json and install those app dependencies
-RUN pnpm install --frozen-lockfile
+RUN pnpm install
 
 # Builder
 
@@ -23,7 +23,7 @@ COPY --from=deps /app/node_modules ./node_modules
 # copy our code into the image but without ^node_modules dir and file because it's really big^
 COPY . .
 
-RUN npm run build
+RUN pnpm build
 
 # Runner 
 FROM base AS runner
