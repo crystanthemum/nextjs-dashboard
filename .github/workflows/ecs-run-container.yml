@@ -35,7 +35,7 @@ jobs:
 
       - run: pnpm i
       - run: pnpm lint
-      - run: pnpm dlx tsc
+      - run: pnpm exec tsc
       # - run: npm test
 
   deploy:
