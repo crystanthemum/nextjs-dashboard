@@ -9,7 +9,7 @@ WORKDIR /app
 FROM base AS deps 
 RUN apk add --no-cache libc6-compat
 
-COPY package*.json ./
+COPY package*.json pnpm-lock.yaml ./
 
 # ci (clean install) used instead of install bc it is faster, more reliable, strictly follows package log json
 # downloading dependency first before we get our code -copied the package.json and install those app dependencies
