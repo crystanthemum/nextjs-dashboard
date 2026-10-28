@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 env:
-  # ${{secrets.}}
   AWS_REGION: ${{ vars.AWS_REGION }} # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: ${{vars.ECR_REPOSITORY}} # set this to your Amazon ECR repository name
   ECS_SERVICE: ${{vars.ECS_SERVICE}} # set this to your Amazon ECS service name
@@ -19,8 +21,28 @@ env:
     # containerDefinitions section of your task definition
 
 jobs:
+  ci:
+    name: Lint and typecheck
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+
+      - name: Sets up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm i
+      - run: pnpm lint
+      - run: pnx tsc --noEmit
+      # - run: npm test
+
   deploy:
     name: Deploy
+    needs: [ci]
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment: production
 
