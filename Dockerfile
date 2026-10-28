@@ -1,6 +1,7 @@
 # specify the node base image with your desired version node:<version>
 FROM node:22-alpine AS base
-RUN corepack enable
+
+RUN corepack enable pnpm 
 # goes to the app directory, like a cd terminal command
 WORKDIR /app
 
@@ -9,7 +10,7 @@ WORKDIR /app
 FROM base AS deps 
 RUN apk add --no-cache libc6-compat
 
-COPY package*.json pnpm-lock.yaml ./
+COPY package*.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
 # ci (clean install) used instead of install bc it is faster, more reliable, strictly follows package log json
 # downloading dependency first before we get our code -copied the package.json and install those app dependencies
