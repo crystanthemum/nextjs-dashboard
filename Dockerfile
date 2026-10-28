@@ -1,6 +1,6 @@
 # specify the node base image with your desired version node:<version>
 FROM node:22-alpine AS base
-
+RUN corepack enable
 # goes to the app directory, like a cd terminal command
 WORKDIR /app
 
