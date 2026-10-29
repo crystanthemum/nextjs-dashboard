@@ -16,8 +16,7 @@ COPY package*.json pnpm-lock.yaml pnpm-workspace.yaml ./
 # downloading dependency first before we get our code -copied the package.json and install those app dependencies
 RUN pnpm install
 
-# Builder
-
+# Builder stage
 FROM base AS builder
 COPY --from=deps /app/node_modules ./node_modules
 
@@ -26,11 +25,13 @@ COPY . .
 
 RUN pnpm build
 
-# Runner 
+# Runner stage
 FROM base AS runner
+ARG VERSION
 ENV NODE_ENV=production
+ENV VERSION=${VERSION}
 
-# Secuirty
+# Security
 
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
