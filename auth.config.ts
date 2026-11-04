@@ -18,6 +18,6 @@ export const authConfig = {
     },
   },
   providers: [], // Add providers with an empty array for now
-  secret: process.env.auth_secret,
+  secret: process.env.AUTH_SECRET,
   trustHost: true,
 } satisfies NextAuthConfig;
