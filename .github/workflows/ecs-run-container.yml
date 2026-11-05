@@ -90,7 +90,7 @@ jobs:
           cluster: ${{ env.ECS_CLUSTER }}
           wait-for-service-stability: true
 
-      - name: Verify deployment success
+      - name: Verify Deployment Success
         id: verify-deployment
         env:
           IMAGE_TAG: ${{ github.sha }}
@@ -101,7 +101,7 @@ jobs:
           ok=no
           for i in $(seq 1 10); do
             DEPLOYED_VERSION=$(curl -s $URL/version | jq -r '.deployedVersion' ) || true
-            if [ "$IMAGE_TAG" = "$DEPLOYED_VERSION"  ]; then 
+            if [ "$IMAGE_TAG" = "$DEPLOYED_VERSION"  ]; then
               ok=yes
               break
             fi
