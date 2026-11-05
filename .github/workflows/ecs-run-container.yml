@@ -97,6 +97,7 @@ jobs:
           URL: ${{ vars.NEXTJS_APP_URL }}
 
         run: |
+          # Running a command to check if latest version of the app got deployed
           ok=no
           for i in $(seq 1 10); do
             DEPLOYED_VERSION=$(curl -s $URL/version | jq -r '.deployedVersion' ) || true
