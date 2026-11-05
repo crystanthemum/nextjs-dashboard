@@ -21,6 +21,17 @@ env:
     # containerDefinitions section of your task definition
 
 jobs:
+  scan:
+    name: Gitleaks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   ci:
     name: Lint and typecheck
     runs-on: ubuntu-latest
@@ -40,7 +51,7 @@ jobs:
 
   deploy:
     name: Deploy
-    needs: [ci]
+    needs: [scan, ci]
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment: production
@@ -90,7 +101,7 @@ jobs:
           cluster: ${{ env.ECS_CLUSTER }}
           wait-for-service-stability: true
 
-      - name: Verify deployment success
+      - name: Verify Deployment Success
         id: verify-deployment
         env:
           IMAGE_TAG: ${{ github.sha }}
@@ -101,7 +112,7 @@ jobs:
           ok=no
           for i in $(seq 1 10); do
             DEPLOYED_VERSION=$(curl -s $URL/version | jq -r '.deployedVersion' ) || true
-            if [ "$IMAGE_TAG" = "$DEPLOYED_VERSION"  ]; then 
+            if [ "$IMAGE_TAG" = "$DEPLOYED_VERSION"  ]; then
               ok=yes
               break
             fi
