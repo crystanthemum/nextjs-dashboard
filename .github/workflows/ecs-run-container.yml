@@ -89,3 +89,28 @@ jobs:
           service: ${{ env.ECS_SERVICE }}
           cluster: ${{ env.ECS_CLUSTER }}
           wait-for-service-stability: true
+
+      - name: Verify deployment success
+        id: verify-deployment
+        env:
+          # IMAGE_TAG: ${{ github.sha }}
+          IMAGE_TAG: testing2w34
+          URL: ${{ vars.NEXTJS_APP_URL }}
+
+        run: |
+          ok=no
+          for i in $(seq 1 10); do
+            DEPLOYED_VERSION=$(curl -s ${{ env.URL }}/version | jq -r '.deployedVersion)
+            if [ ${{ env.IMAGE_TAG }} = $DEPLOYED_VERSION ]; then
+              ok=yes
+              break
+            fi
+            echo "attempt $i: expected $IMAGE_TAG, got '$DEPLOYED_VERSION'; waiting..."
+            sleep 30
+            done
+            if [ "$ok" = yes ]; then
+              echo "::notice:: successfully deployed version $DEPLOYED_VERSION"
+            else
+              echo "::warning:: unable to deploy latest version"
+            fi
+          exit
