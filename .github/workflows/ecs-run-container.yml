@@ -50,6 +50,7 @@ jobs:
       - run: pnpm test
 
   hadolint:
+    name: Run Hadolint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -60,18 +61,12 @@ jobs:
 
   deploy:
     name: Deploy
-    needs: [scan, docker, ci]
+    needs: [scan, hadolint, ci]
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment: production
 
     steps:
-      - name: Lint Dockerfile
-      - uses: actions/checkout@v3
-      - uses: hadolint/hadolint-action@v3.1.0
-        with:
-          dockerfile: Dockerfile
-
       - name: Checkout
         uses: actions/checkout@v7
 
