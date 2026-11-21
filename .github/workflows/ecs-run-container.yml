@@ -49,22 +49,14 @@ jobs:
       - run: pnpm exec tsc
       - run: pnpm test
 
-  docker:
-    name: Dockerfile Lint
-    on:
-      pull_request:
-      push:
-        branches:
-          - main
-    jobs:
-      hadolint:
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v4
-          - name: Run Hadolint
-            uses: hadolint/hadolint-action@v3.1.0
-            with:
-              dockerfile: Dockerfile
+  hadolint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Hadolint
+        uses: hadolint/hadolint-action@v3.1.0
+        with:
+          dockerfile: Dockerfile
 
   deploy:
     name: Deploy
