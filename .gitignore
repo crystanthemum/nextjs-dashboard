@@ -26,7 +26,11 @@ yarn-error.log*
 
 # local env files
 .env.production
+.env.local
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Vitest reports and artifacts
+.vitest/
