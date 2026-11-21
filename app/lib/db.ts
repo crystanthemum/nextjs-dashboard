@@ -1,4 +1,13 @@
 import postgres from "postgres";
+import NextAuth, { AuthError } from "next-auth";
+import { authConfig } from "@/auth.config";
+import Credentials from "next-auth/providers/credentials";
+import { z } from "zod";
+import type { User } from "@/app/lib/definitions";
+import bcrypt from "bcrypt";
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
+
 import {
   CustomerField,
   CustomersTableType,
@@ -13,15 +22,7 @@ const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
 
 export async function fetchRevenue() {
   try {
-    // Artificially delay a response for demo purposes.
-    // Don't do this in production :)
-
-    console.log("Fetching revenue data...");
-    await new Promise((resolve) => setTimeout(resolve, 3000));
-
     const data = await sql<Revenue[]>`SELECT * FROM revenue`;
-
-    console.log("Data fetch completed after 3 seconds.");
 
     return data;
   } catch (error) {
@@ -32,16 +33,12 @@ export async function fetchRevenue() {
 
 export async function fetchLatestInvoices() {
   try {
-    console.log("fetching latest invoices");
-    await new Promise((resolve) => setTimeout(resolve, 5000));
-
     const data = await sql<LatestInvoiceRaw[]>`
       SELECT invoices.amount, customers.name, customers.image_url, customers.email, invoices.id
       FROM invoices
       JOIN customers ON invoices.customer_id = customers.id
       ORDER BY invoices.date DESC
       LIMIT 5`;
-    console.log("Data fetch completed after 5 seconds.");
 
     const latestInvoices = data.map((invoice) => ({
       ...invoice,
@@ -220,3 +217,173 @@ export async function fetchFilteredCustomers(query: string) {
     throw new Error("Failed to fetch customer table.");
   }
 }
+
+export type State = {
+  errors?: {
+    customerId?: string[];
+    amount?: string[];
+    status?: string[];
+  };
+  message?: string | null;
+};
+
+const FormSchema = z.object({
+  id: z.string(),
+  customerId: z.string({
+    invalid_type_error: "Please select a customer.",
+  }),
+  amount: z.coerce
+    .number()
+    .gt(0, { message: "Please enter an amount greater than $0." }),
+
+  status: z.enum(["pending", "paid"], {
+    invalid_type_error: "Please select an invoice status",
+  }),
+  date: z.string(),
+});
+
+const CreateInvoice = FormSchema.omit({ id: true, date: true });
+
+export async function createInvoice(prevState: State, formData: FormData) {
+  const validatedFields = CreateInvoice.safeParse({
+    customerId: formData.get("customerId"),
+    amount: formData.get("amount"),
+    status: formData.get("status"),
+  });
+
+  if (!validatedFields.success) {
+    return {
+      errors: validatedFields.error.flatten().fieldErrors,
+      message: "Failed to create an invoice",
+    };
+  }
+  const amountInCents = validatedFields.data.amount * 100;
+
+  const { customerId, status } = validatedFields.data;
+
+  const date = new Date().toISOString().split("T")[0];
+  try {
+    await sql`
+    INSERT INTO invoices (customer_id, amount, status, date)
+    VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
+  `;
+  } catch (error) {
+    console.error(error);
+
+    return {
+      message: "issue creating invoice",
+    };
+  }
+  revalidatePath("/dashboard/invoices");
+  redirect("/dashboard/invoices");
+}
+
+// Use Zod to update the expected types
+const UpdateInvoice = FormSchema.omit({ id: true, date: true });
+
+export async function updateInvoice(
+  id: string,
+  prevState: State,
+  formData: FormData,
+) {
+  const validatedFields = UpdateInvoice.safeParse({
+    customerId: formData.get("customerId"),
+    amount: formData.get("amount"),
+    status: formData.get("status"),
+  });
+
+  if (!validatedFields.success) {
+    return {
+      errors: validatedFields.error.flatten().fieldErrors,
+      message: "Failed to update an invoice",
+    };
+  }
+
+  const { amount, customerId, status } = validatedFields.data;
+
+  const amountInCents = amount * 100;
+  try {
+    await sql`
+    UPDATE invoices
+    SET customer_id = ${customerId}, amount = ${amountInCents}, status = ${status}
+    WHERE id = ${id}
+  `;
+  } catch (e) {
+    console.error("error updating:", e);
+    return {
+      message: "error updating database",
+    };
+  }
+
+  revalidatePath("/dashboard/invoices");
+  redirect("/dashboard/invoices");
+}
+
+export async function deleteInvoice(id: string) {
+  try {
+    await sql`
+        DELETE FROM invoices
+        WHERE id=${id}
+        `;
+  } catch (e) {
+    console.error("delete error", e);
+    throw new Error("error deleting invoice");
+  }
+
+  revalidatePath("/dashboard/invoices");
+}
+
+export async function authenticate(
+  prevState: string | undefined,
+  formData: FormData,
+) {
+  try {
+    await signIn("credentials", formData);
+  } catch (error) {
+    if (error instanceof AuthError) {
+      switch (error.type) {
+        case "CredentialsSignin":
+          return "Invalid credentials.";
+        default:
+          return "Something went wrong.";
+      }
+    }
+    throw error;
+  }
+}
+
+
+async function getUser(email: string): Promise<User | undefined> {
+  try {
+    const user = await sql<User[]>`SELECT * FROM users WHERE email=${email}`;
+    return user[0];
+  } catch (error) {
+    console.error("Failed to fetch user:", error);
+    throw new Error("Failed to fetch user.");
+  }
+}
+
+export const { auth, signIn, signOut } = NextAuth({
+  ...authConfig,
+  providers: [
+    Credentials({
+      async authorize(credentials) {
+        const parsedCredentials = z
+          .object({ email: z.string().email(), password: z.string().min(6) })
+          .safeParse(credentials);
+
+        if (parsedCredentials.success) {
+          const { email, password } = parsedCredentials.data;
+          const user = await getUser(email);
+          if (!user) return null;
+          const passwordsMatch = await bcrypt.compare(password, user.password);
+
+          if (passwordsMatch) {
+            return user;
+          }
+        }
+        return null;
+      },
+    }),
+  ],
+});

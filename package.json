@@ -20,6 +20,7 @@
     "react-dom": "latest",
     "tailwindcss": "3.4.17",
     "use-debounce": "^10.0.6",
+    "vercel": "^65.14.0",
     "zod": "^3.25.17"
   },
   "devDependencies": {
