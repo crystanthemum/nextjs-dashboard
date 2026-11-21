@@ -47,8 +47,6 @@ jobs:
       - run: pnpm i
       - run: pnpm lint
       - run: pnpm exec tsc
-
-      - name: Unit tests
       - run: pnpm test
 
   deploy:
