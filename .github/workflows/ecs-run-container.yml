@@ -68,7 +68,7 @@ jobs:
 
   deploy:
     name: Deploy
-    needs: [scan, ci]
+    needs: [scan, docker, ci]
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment: production
