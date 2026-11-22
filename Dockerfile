@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Dependencies
 FROM base AS deps 
-RUN apk add --no-cache libc6-compat
+RUN apk add --no-cache libc6-compat=~1.2.4-r3
 
 COPY package*.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
@@ -33,15 +33,14 @@ ENV VERSION=${VERSION}
 
 # Security
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
+RUN addgroup --system --gid 1001 nodejs / && adduser --system --uid 1001 nextjs
 
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 # Runner - ensures docker exposes app to the outside world
-USER nextjs
+USER 1234
 EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
