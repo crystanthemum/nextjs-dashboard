@@ -55,9 +55,10 @@ jobs:
         uses: hadolint/hadolint-action@v3.1.0
         with:
           dockerfile: Dockerfile
-    
-    name: Print Hadolint results
-    run: echo 'HADOLINT LINT RESULTS => ${{ env.HADOLINT_RESULTS }}'
+
+      - name: Print Hadolint results
+        run: |
+          echo "HADOLINT LINT RESULTS => ${{ env.HADOLINT_RESULTS }}"
 
   deploy:
     name: Deploy
