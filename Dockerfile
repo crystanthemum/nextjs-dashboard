@@ -33,7 +33,7 @@ ENV VERSION=${VERSION}
 
 # Security
 
-RUN addgroup --system --gid 1001 nodejs / && adduser --system --uid 1001 nextjs
+RUN addgroup --system --gid 1001 nodejs / && adduser --system --uid 1001 1234
 
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
