@@ -44,10 +44,10 @@ jobs:
         with:
           version: 10
 
-      - run: pnpm i
-      - run: pnpm lint
-      - run: pnpm exec tsc
-      - run: pnpm test
+      - run: pnpm i \ && pnpm lint \ &&  pnpm exec tsc \ && pnpm test
+      # - run: pnpm lint
+      # - run: pnpm exec tsc
+      # - run: pnpm test
 
   hadolint:
     name: Run Hadolint
@@ -58,6 +58,7 @@ jobs:
         uses: hadolint/hadolint-action@v3.1.0
         with:
           dockerfile: Dockerfile
+        run: echo 'HADOLINT LINT RESULTS => ${{ env.HADOLINT_RESULTS }}'
 
   deploy:
     name: Deploy
