@@ -47,11 +47,10 @@ jobs:
       - run: pnpm i \ && pnpm lint \ &&  pnpm exec tsc \ && pnpm test
 
   hadolint:
-    name: Lint Dockerfile
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run Hadolint
+      - name: Run Dockerfile linter
         uses: hadolint/hadolint-action@v3.1.0
         with:
           dockerfile: Dockerfile
