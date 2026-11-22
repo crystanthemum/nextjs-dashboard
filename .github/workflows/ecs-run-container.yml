@@ -44,7 +44,10 @@ jobs:
         with:
           version: 10
 
-      - run: pnpm i \ && pnpm lint \ &&  pnpm exec tsc \ && pnpm test
+      - run: pnpm i
+      - run: pnpm lint
+      - run: pnpm exec tsc
+      - run: pnpm test
 
   hadolint:
     name: Lint Dockerfile
