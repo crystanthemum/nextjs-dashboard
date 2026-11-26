@@ -23,7 +23,7 @@
     "clsx": "^2.1.1",
     "mock-aws-s3": "^4.0.2",
     "next": "latest",
-    "next-auth": "5.0.0-beta.25",
+    "next-auth": "5.0.0-beta.32",
     "nock": "^15.0.6",
     "node": "27.0.0-alpha.0.1.1",
     "postcss": "8.5.1",
