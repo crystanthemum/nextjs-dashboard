@@ -1,5 +1,5 @@
 # specify the node base image with your desired version node:<version>
-FROM node:22-alpine AS base
+FROM node:24.20.0-trixie-slim as base
 
 RUN corepack enable pnpm 
 # goes to the app directory, like a cd terminal command
@@ -7,8 +7,8 @@ WORKDIR /app
 
 
 # Dependencies
-FROM base AS deps 
-RUN apk add --no-cache libc6-compat=~1.2.4-r3
+# FROM base AS deps 
+# RUN apk add --no-cache libc6-compat=~1.2.4-r3
 
 COPY package*.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
