@@ -8,6 +8,7 @@ allowBuilds:
   aws-sdk: false
   bcrypt: true
   esbuild: true
+  node: true
   unrs-resolver: true
   workerd: false
 ignore-workspace-root-check: true
