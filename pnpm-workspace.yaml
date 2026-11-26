@@ -2,8 +2,8 @@
 #   bcrypt: true
 #   esbuild: true
 #   sharp: true
-#   unrs-resolver: true
-packages: []
+packages:
+  - packages/*
 allowBuilds:
   bcrypt: true
   esbuild: true

@@ -14,7 +14,7 @@ COPY package*.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
 # ci (clean install) used instead of install bc it is faster, more reliable, strictly follows package log json
 # downloading dependency first before we get our code -copied the package.json and install those app dependencies
-RUN pnpm install
+RUN pnpm install --workspace-root
 
 # Builder stage
 FROM base AS builder
