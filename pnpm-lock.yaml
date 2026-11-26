@@ -19,7 +19,7 @@ importers:
         version: 0.5.11(tailwindcss@3.4.17)
       '@vinext/cloudflare':
         specifier: ^1.4.0
-        version: 1.4.0(e73540ba608f16d1d0a5a708c9c56a49)
+        version: 1.4.0(2779f9aad6b54ca96d6f589596f96886)
       autoprefixer:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.5.1)
@@ -28,7 +28,7 @@ importers:
         version: 2.1693.0
       bcrypt:
         specifier: ^5.1.1
-        version: 5.1.1
+        version: 5.1.1(supports-color@10.2.2)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -37,13 +37,13 @@ importers:
         version: 4.0.2
       next:
         specifier: latest
-        version: 16.4.6(@babel/core@7.29.7)(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        version: 16.4.6(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       next-auth:
         specifier: 5.0.0-beta.25
-        version: 5.0.0-beta.25(next@16.4.6(@babel/core@7.29.7)(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)
+        version: 5.0.0-beta.25(next@16.4.6(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)
       nock:
         specifier: ^15.0.6
-        version: 15.0.6
+        version: 15.0.6(supports-color@10.2.2)
       node:
         specifier: 27.0.0-alpha.0.1.1
         version: 27.0.0-alpha.0.1.1
@@ -61,7 +61,7 @@ importers:
         version: 19.3.1(react@19.3.1)
       react-server-dom-webpack:
         specifier: ^19.3.1
-        version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1))
+        version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7)))
       tailwindcss:
         specifier: 3.4.17
         version: 3.4.17
@@ -70,20 +70,20 @@ importers:
         version: 10.1.1(react@19.3.1)
       vercel:
         specifier: ^65.14.0
-        version: 65.14.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
+        version: 65.14.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(supports-color@10.2.2)
       vinext:
         specifier: ^1.4.6
-        version: 1.4.6(@types/node@22.10.7)(@vitejs/plugin-react@6.3.0(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(@vitejs/plugin-rsc@0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)))(react@19.3.1)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(next@16.4.6(@babel/core@7.29.7)(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)))(react@19.3.1)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
+        version: 1.4.6(@types/node@22.10.7)(@vitejs/plugin-react@6.3.0(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(@vitejs/plugin-rsc@0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))))(react@19.3.1)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(next@16.4.6(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))))(react@19.3.1)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
       vitest:
         specifier: ^5.1.1
-        version: 5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
+        version: 5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
       zod:
         specifier: ^3.25.17
         version: 3.25.76
     devDependencies:
       '@cloudflare/vite-plugin':
         specifier: 2.0.0-rc.5
-        version: 2.0.0-rc.5(@types/node@22.10.7)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))(workerd@1.20261123.1)
+        version: 2.0.0-rc.5(@types/node@22.10.7)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))(workerd@1.20261123.1)
       '@types/bcrypt':
         specifier: ^5.0.2
         version: 5.0.2
@@ -98,19 +98,19 @@ importers:
         version: 19.0.3(@types/react@19.0.7)
       '@vitejs/plugin-react':
         specifier: ^6.3.0
-        version: 6.3.0(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
+        version: 6.3.0(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
       '@vitejs/plugin-rsc':
         specifier: ^0.5.39
-        version: 0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)))(react@19.3.1)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
+        version: 0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))))(react@19.3.1)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
       cf:
         specifier: 1.0.0-rc.5
         version: 1.0.0-rc.5(@types/node@22.10.7)
       eslint:
         specifier: ^10.7.0
-        version: 10.13.0(jiti@1.21.7)
+        version: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       eslint-config-next:
         specifier: ^16.2.10
-        version: 16.4.3(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3))(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)
+        version: 16.4.3(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3))(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)
       prettier-plugin-yaml:
         specifier: ^1.3.2
         version: 1.3.2(prettier@3.10.1)
@@ -121,11 +121,11 @@ importers:
         specifier: 5.7.3
         version: 5.7.3
       vite:
-        specifier: 8.3.0
-        version: 8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
+        specifier: 8.3.3
+        version: 8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
       wrangler:
         specifier: ^4.168.0
-        version: 4.168.0(@types/node@22.10.7)(vitest@5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))
+        version: 4.168.0(@types/node@22.10.7)(vitest@5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))
 
 packages:
 
@@ -4795,8 +4795,8 @@ packages:
   vite-plugin-dynamic-import@1.6.0:
     resolution: {integrity: sha512-TM0sz70wfzTIo9YCxVFwS8OA9lNREsh+0vMHGSkWDTZ7bgd1Yjs5RV8EgB634l/91IsXJReg0xtmuQqP0mf+rg==}
 
-  vite@8.3.0:
-    resolution: {integrity: sha512-lhZBVvEHefgE+HQZC9O7EBJgCU/nVzFNl7vkS4RE0APtWLP02/8QVIkQtzBxPquh7lq5/78NHipTj7ODQ6XuyQ==}
+  vite@8.3.3:
+    resolution: {integrity: sha512-cTAldKPImjg6c+gk48U19POPn3GCBzZwpdsN8ZMEEcbpes+6/wvfqUd0C2y3qYY4wsj8PwgFwrZ/1jBPVttMSg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -5098,20 +5098,20 @@ snapshots:
 
   '@babel/compat-data@7.29.7': {}
 
-  '@babel/core@7.29.7':
+  '@babel/core@7.29.7(supports-color@10.2.2)':
     dependencies:
       '@babel/code-frame': 7.29.7
       '@babel/generator': 7.29.8
       '@babel/helper-compilation-targets': 7.29.7
-      '@babel/helper-module-transforms': 7.29.7(@babel/core@7.29.7)
+      '@babel/helper-module-transforms': 7.29.7(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@babel/helpers': 7.29.10
       '@babel/parser': 7.29.11
       '@babel/template': 7.29.7
-      '@babel/traverse': 7.29.10
+      '@babel/traverse': 7.29.10(supports-color@10.2.2)
       '@babel/types': 7.29.11
       '@jridgewell/remapping': 2.3.5
       convert-source-map: 2.0.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -5136,19 +5136,19 @@ snapshots:
 
   '@babel/helper-globals@7.29.7': {}
 
-  '@babel/helper-module-imports@7.29.7':
+  '@babel/helper-module-imports@7.29.7(supports-color@10.2.2)':
     dependencies:
-      '@babel/traverse': 7.29.10
+      '@babel/traverse': 7.29.10(supports-color@10.2.2)
       '@babel/types': 7.29.11
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helper-module-transforms@7.29.7(@babel/core@7.29.7)':
+  '@babel/helper-module-transforms@7.29.7(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)':
     dependencies:
-      '@babel/core': 7.29.7
-      '@babel/helper-module-imports': 7.29.7
+      '@babel/core': 7.29.7(supports-color@10.2.2)
+      '@babel/helper-module-imports': 7.29.7(supports-color@10.2.2)
       '@babel/helper-validator-identifier': 7.29.7
-      '@babel/traverse': 7.29.10
+      '@babel/traverse': 7.29.10(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -5173,7 +5173,7 @@ snapshots:
       '@babel/parser': 7.29.11
       '@babel/types': 7.29.11
 
-  '@babel/traverse@7.29.10':
+  '@babel/traverse@7.29.10(supports-color@10.2.2)':
     dependencies:
       '@babel/code-frame': 7.29.7
       '@babel/generator': 7.29.8
@@ -5181,7 +5181,7 @@ snapshots:
       '@babel/parser': 7.29.11
       '@babel/template': 7.29.7
       '@babel/types': 7.29.11
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -5230,7 +5230,7 @@ snapshots:
     optionalDependencies:
       workerd: 1.20261123.1
 
-  '@cloudflare/vite-plugin@2.0.0-rc.5(@types/node@22.10.7)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))(workerd@1.20261123.1)':
+  '@cloudflare/vite-plugin@2.0.0-rc.5(@types/node@22.10.7)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))(workerd@1.20261123.1)':
     dependencies:
       '@cloudflare/build-output-utils': 1.0.0-rc.4
       '@cloudflare/config': 1.0.0-rc.4
@@ -5238,7 +5238,7 @@ snapshots:
       '@cloudflare/unenv-preset': 2.16.2(unenv@2.0.0-rc.24)(workerd@1.20261123.1)
       miniflare: 5.20261123.1-beta(@types/node@22.10.7)
       unenv: 2.0.0-rc.24
-      vite: 8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
       ws: 8.21.0
     transitivePeerDependencies:
       - '@types/node'
@@ -5264,14 +5264,14 @@ snapshots:
 
   '@cloudflare/workers-response-store@1.2.0': {}
 
-  '@cloudflare/workers-utils@0.57.0(vitest@5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))':
+  '@cloudflare/workers-utils@0.57.0(vitest@5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))':
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       chalk: 5.3.0
       dotenv: 16.3.1
       undici: 7.30.2
     optionalDependencies:
-      vitest: 5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
+      vitest: 5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -5482,22 +5482,22 @@ snapshots:
   '@esbuild/win32-x64@0.28.2':
     optional: true
 
-  '@eslint-community/eslint-utils@4.10.1(eslint@10.13.0(jiti@1.21.7))':
+  '@eslint-community/eslint-utils@4.10.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))':
     dependencies:
-      eslint: 10.13.0(jiti@1.21.7)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       eslint-visitor-keys: 3.4.3
 
-  '@eslint-community/eslint-utils@4.9.1(eslint@10.13.0(jiti@1.21.7))':
+  '@eslint-community/eslint-utils@4.9.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))':
     dependencies:
-      eslint: 10.13.0(jiti@1.21.7)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.2': {}
 
-  '@eslint/config-array@0.23.5':
+  '@eslint/config-array@0.23.5(supports-color@10.2.2)':
     dependencies:
       '@eslint/object-schema': 3.0.5
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       minimatch: 10.2.6
     transitivePeerDependencies:
       - supports-color
@@ -5692,10 +5692,10 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@mapbox/node-pre-gyp@1.0.11':
+  '@mapbox/node-pre-gyp@1.0.11(supports-color@10.2.2)':
     dependencies:
       detect-libc: 2.1.2
-      https-proxy-agent: 5.0.1
+      https-proxy-agent: 5.0.1(supports-color@10.2.2)
       make-dir: 3.1.0
       node-fetch: 2.7.0
       nopt: 5.0.0
@@ -5707,11 +5707,11 @@ snapshots:
       - encoding
       - supports-color
 
-  '@mapbox/node-pre-gyp@2.0.3':
+  '@mapbox/node-pre-gyp@2.0.3(supports-color@10.2.2)':
     dependencies:
       consola: 3.4.2
       detect-libc: 2.1.2
-      https-proxy-agent: 7.0.6
+      https-proxy-agent: 7.0.6(supports-color@10.2.2)
       node-fetch: 2.7.0
       nopt: 8.1.0
       semver: 7.8.5
@@ -5720,11 +5720,11 @@ snapshots:
       - encoding
       - supports-color
 
-  '@mswjs/interceptors@0.45.12':
+  '@mswjs/interceptors@0.45.12(supports-color@10.2.2)':
     dependencies:
       '@open-draft/until': 3.0.1
       '@types/debug': 4.1.13
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       is-node-process: 1.2.0
       outvariant: 1.4.3
       rettime: 0.11.13
@@ -5798,9 +5798,9 @@ snapshots:
 
   '@next/env@16.4.6': {}
 
-  '@next/eslint-plugin-next@16.4.3(eslint@10.13.0(jiti@1.21.7))':
+  '@next/eslint-plugin-next@16.4.3(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))':
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.13.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))
       fast-glob: 3.3.1
     transitivePeerDependencies:
       - eslint
@@ -6197,15 +6197,15 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.3
 
-  '@typescript-eslint/eslint-plugin@8.72.1(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3))(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)':
+  '@typescript-eslint/eslint-plugin@8.72.1(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3))(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)
       '@typescript-eslint/scope-manager': 8.72.1
-      '@typescript-eslint/type-utils': 8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)
+      '@typescript-eslint/type-utils': 8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)
       '@typescript-eslint/visitor-keys': 8.72.1
-      eslint: 10.13.0(jiti@1.21.7)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       ignore: 7.0.14
       natural-compare: 1.4.0
       ts-api-utils: 2.5.0(typescript@5.7.3)
@@ -6213,23 +6213,23 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)':
+  '@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.72.1
       '@typescript-eslint/types': 8.72.1
-      '@typescript-eslint/typescript-estree': 8.72.1(typescript@5.7.3)
+      '@typescript-eslint/typescript-estree': 8.72.1(supports-color@10.2.2)(typescript@5.7.3)
       '@typescript-eslint/visitor-keys': 8.72.1
-      debug: 4.4.3
-      eslint: 10.13.0(jiti@1.21.7)
+      debug: 4.4.3(supports-color@10.2.2)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/project-service@8.72.1(typescript@5.7.3)':
+  '@typescript-eslint/project-service@8.72.1(supports-color@10.2.2)(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.72.1(typescript@5.7.3)
       '@typescript-eslint/types': 8.72.1
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
@@ -6243,13 +6243,13 @@ snapshots:
     dependencies:
       typescript: 5.7.3
 
-  '@typescript-eslint/type-utils@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)':
+  '@typescript-eslint/type-utils@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/types': 8.72.1
-      '@typescript-eslint/typescript-estree': 8.72.1(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)
-      debug: 4.4.3
-      eslint: 10.13.0(jiti@1.21.7)
+      '@typescript-eslint/typescript-estree': 8.72.1(supports-color@10.2.2)(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)
+      debug: 4.4.3(supports-color@10.2.2)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       ts-api-utils: 2.5.0(typescript@5.7.3)
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -6257,13 +6257,13 @@ snapshots:
 
   '@typescript-eslint/types@8.72.1': {}
 
-  '@typescript-eslint/typescript-estree@8.72.1(typescript@5.7.3)':
+  '@typescript-eslint/typescript-estree@8.72.1(supports-color@10.2.2)(typescript@5.7.3)':
     dependencies:
-      '@typescript-eslint/project-service': 8.72.1(typescript@5.7.3)
+      '@typescript-eslint/project-service': 8.72.1(supports-color@10.2.2)(typescript@5.7.3)
       '@typescript-eslint/tsconfig-utils': 8.72.1(typescript@5.7.3)
       '@typescript-eslint/types': 8.72.1
       '@typescript-eslint/visitor-keys': 8.72.1
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       minimatch: 10.2.6
       semver: 7.8.5
       tinyglobby: 0.2.17
@@ -6272,13 +6272,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)':
+  '@typescript-eslint/utils@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.10.1(eslint@10.13.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))
       '@typescript-eslint/scope-manager': 8.72.1
       '@typescript-eslint/types': 8.72.1
-      '@typescript-eslint/typescript-estree': 8.72.1(typescript@5.7.3)
-      eslint: 10.13.0(jiti@1.21.7)
+      '@typescript-eslint/typescript-estree': 8.72.1(supports-color@10.2.2)(typescript@5.7.3)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
@@ -6292,13 +6292,13 @@ snapshots:
     dependencies:
       unpic: 4.2.2
 
-  '@unpic/react@1.0.2(next@16.4.6(@babel/core@7.29.7)(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
+  '@unpic/react@1.0.2(next@16.4.6(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
     dependencies:
       '@unpic/core': 1.0.3
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
     optionalDependencies:
-      next: 16.4.6(@babel/core@7.29.7)(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      next: 16.4.6(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
 
   '@unrs/resolver-binding-android-arm-eabi@1.12.2':
     optional: true
@@ -6370,10 +6370,10 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.12.2':
     optional: true
 
-  '@vercel/backends@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/backends@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 15.3.0
-      '@vercel/nft': 1.10.0
+      '@vercel/nft': 1.10.0(supports-color@10.2.2)
       '@vercel/static-config': 3.4.4(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
       execa: 3.2.0
       fs-extra: 11.1.0
@@ -6407,9 +6407,9 @@ snapshots:
       cjs-module-lexer: 1.2.3
       es-module-lexer: 1.5.0
 
-  '@vercel/cervel@0.1.93(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/cervel@0.1.93(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
-      '@vercel/backends': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/backends': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -6440,32 +6440,32 @@ snapshots:
     dependencies:
       execa: 5.1.1
 
-  '@vercel/cli-support@65.14.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)':
+  '@vercel/cli-support@65.14.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(supports-color@10.2.2)':
     dependencies:
-      '@vercel/backends': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/backends': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
       '@vercel/blob': 2.8.0
       '@vercel/build-utils': 15.3.0
       '@vercel/cli-auth': 0.4.1
       '@vercel/cli-config': 0.3.8
       '@vercel/container': 25.0.2(@vercel/build-utils@15.3.0)
       '@vercel/detect-agent': 1.2.7
-      '@vercel/elysia': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
-      '@vercel/express': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
-      '@vercel/fastify': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
-      '@vercel/fun': 1.3.6
+      '@vercel/elysia': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
+      '@vercel/express': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
+      '@vercel/fastify': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
+      '@vercel/fun': 1.3.6(supports-color@10.2.2)
       '@vercel/go': 28.0.1(@vercel/build-utils@15.3.0)
-      '@vercel/h3': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
-      '@vercel/hono': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/h3': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
+      '@vercel/hono': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
       '@vercel/hydrogen': 26.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
-      '@vercel/koa': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
-      '@vercel/nestjs': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
-      '@vercel/next': 29.0.0(@vercel/build-utils@15.3.0)
-      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/koa': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
+      '@vercel/nestjs': 25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
+      '@vercel/next': 29.0.0(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
+      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
       '@vercel/prepare-flags-definitions': 0.6.1
       '@vercel/python': 31.0.1(@vercel/build-utils@15.3.0)
       '@vercel/python-analysis': 0.15.3
-      '@vercel/redwood': 27.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
-      '@vercel/remix-builder': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/redwood': 27.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
+      '@vercel/remix-builder': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
       '@vercel/ruby': 27.0.0(@vercel/build-utils@15.3.0)
       '@vercel/rust': 26.0.1(@vercel/build-utils@15.3.0)
       '@vercel/static-build': 27.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
@@ -6474,7 +6474,7 @@ snapshots:
       jose: 5.9.6
       jsonc-parser: 3.3.1
       luxon: 3.7.2
-      sandbox: 4.11.1
+      sandbox: 4.11.1(supports-color@10.2.2)
       smol-toml: 1.5.2
       undici: 5.29.0
       uuid: 14.0.1
@@ -6501,10 +6501,10 @@ snapshots:
 
   '@vercel/detect-agent@1.2.7': {}
 
-  '@vercel/elysia@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/elysia@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 15.3.0
-      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
       '@vercel/static-config': 3.4.4(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
     transitivePeerDependencies:
       - '@emnapi/core'
@@ -6515,12 +6515,12 @@ snapshots:
 
   '@vercel/error-utils@2.2.1': {}
 
-  '@vercel/express@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/express@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 15.3.0
-      '@vercel/cervel': 0.1.93(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
-      '@vercel/nft': 1.10.0
-      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/cervel': 0.1.93(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
+      '@vercel/nft': 1.10.0(supports-color@10.2.2)
+      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
       '@vercel/static-config': 3.4.4(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
       fs-extra: 11.1.0
       path-to-regexp: 8.3.0
@@ -6533,10 +6533,10 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/fastify@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/fastify@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 15.3.0
-      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
       '@vercel/static-config': 3.4.4(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
     transitivePeerDependencies:
       - '@emnapi/core'
@@ -6545,11 +6545,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/fun@1.3.6':
+  '@vercel/fun@1.3.6(supports-color@10.2.2)':
     dependencies:
       '@tootallnate/once': 2.0.1
       async-listen: 1.2.0
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@10.2.2)
       generic-pool: 3.4.2
       micro: 9.3.5-canary.3
       ms: 2.1.1
@@ -6583,10 +6583,10 @@ snapshots:
     dependencies:
       '@vercel/build-utils': 15.3.0
 
-  '@vercel/h3@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/h3@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 15.3.0
-      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
       '@vercel/static-config': 3.4.4(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
     transitivePeerDependencies:
       - '@emnapi/core'
@@ -6595,11 +6595,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/hono@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/hono@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 15.3.0
-      '@vercel/nft': 1.10.0
-      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/nft': 1.10.0(supports-color@10.2.2)
+      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
       '@vercel/static-config': 3.4.4(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
       fs-extra: 11.1.0
       path-to-regexp: 8.3.0
@@ -6621,10 +6621,10 @@ snapshots:
       - '@emnapi/core'
       - '@emnapi/runtime'
 
-  '@vercel/koa@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/koa@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 15.3.0
-      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
       '@vercel/static-config': 3.4.4(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
     transitivePeerDependencies:
       - '@emnapi/core'
@@ -6633,10 +6633,10 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/nestjs@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/nestjs@25.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 15.3.0
-      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)
+      '@vercel/node': 30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)
       '@vercel/static-config': 3.4.4(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
     transitivePeerDependencies:
       - '@emnapi/core'
@@ -6645,18 +6645,18 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/next@29.0.0(@vercel/build-utils@15.3.0)':
+  '@vercel/next@29.0.0(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 15.3.0
-      '@vercel/nft': 1.10.0
+      '@vercel/nft': 1.10.0(supports-color@10.2.2)
     transitivePeerDependencies:
       - encoding
       - rollup
       - supports-color
 
-  '@vercel/nft@1.10.0':
+  '@vercel/nft@1.10.0(supports-color@10.2.2)':
     dependencies:
-      '@mapbox/node-pre-gyp': 2.0.3
+      '@mapbox/node-pre-gyp': 2.0.3(supports-color@10.2.2)
       '@rollup/pluginutils': 5.5.1
       acorn: 8.19.0
       acorn-import-attributes: 1.9.5(acorn@8.19.0)
@@ -6673,7 +6673,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/node@30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/node@30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
@@ -6681,7 +6681,7 @@ snapshots:
       '@types/node': 20.11.0
       '@vercel/build-utils': 15.3.0
       '@vercel/error-utils': 2.2.1
-      '@vercel/nft': 1.10.0
+      '@vercel/nft': 1.10.0(supports-color@10.2.2)
       '@vercel/static-config': 3.4.4(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
       async-listen: 3.0.0
       cjs-module-lexer: 1.2.3
@@ -6741,10 +6741,10 @@ snapshots:
       '@vercel/build-utils': 15.3.0
       '@vercel/python-analysis': 0.15.3
 
-  '@vercel/redwood@27.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/redwood@27.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 15.3.0
-      '@vercel/nft': 1.10.0
+      '@vercel/nft': 1.10.0(supports-color@10.2.2)
       '@vercel/static-config': 3.4.4(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
       semver: 6.3.1
       ts-morph: 12.0.0
@@ -6755,11 +6755,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/remix-builder@30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)':
+  '@vercel/remix-builder@30.0.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(@vercel/build-utils@15.3.0)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 15.3.0
       '@vercel/error-utils': 2.2.1
-      '@vercel/nft': 1.10.0
+      '@vercel/nft': 1.10.0(supports-color@10.2.2)
       '@vercel/static-config': 3.4.4(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
       path-to-regexp: 6.1.0
       path-to-regexp-updated: path-to-regexp@6.3.0
@@ -6846,22 +6846,22 @@ snapshots:
   '@vercel/vc-native-win32-x64@65.14.0':
     optional: true
 
-  '@vinext/cloudflare@1.4.0(e73540ba608f16d1d0a5a708c9c56a49)':
+  '@vinext/cloudflare@1.4.0(2779f9aad6b54ca96d6f589596f96886)':
     dependencies:
       '@cloudflare/workers-response-store': 1.2.0
-      vinext: 1.4.6(@types/node@22.10.7)(@vitejs/plugin-react@6.3.0(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(@vitejs/plugin-rsc@0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)))(react@19.3.1)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(next@16.4.6(@babel/core@7.29.7)(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)))(react@19.3.1)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
+      vinext: 1.4.6(@types/node@22.10.7)(@vitejs/plugin-react@6.3.0(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(@vitejs/plugin-rsc@0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))))(react@19.3.1)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(next@16.4.6(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))))(react@19.3.1)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
     optionalDependencies:
-      '@cloudflare/vite-plugin': 2.0.0-rc.5(@types/node@22.10.7)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))(workerd@1.20261123.1)
+      '@cloudflare/vite-plugin': 2.0.0-rc.5(@types/node@22.10.7)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))(workerd@1.20261123.1)
       cf: 1.0.0-rc.5(@types/node@22.10.7)
 
   '@vinext/types@1.0.2': {}
 
-  '@vitejs/plugin-react@6.3.0(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))':
+  '@vitejs/plugin-react@6.3.0(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))':
     dependencies:
       '@rolldown/pluginutils': 1.1.1
-      vite: 8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
 
-  '@vitejs/plugin-rsc@0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)))(react@19.3.1)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))':
+  '@vitejs/plugin-rsc@0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))))(react@19.3.1)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))':
     dependencies:
       '@rolldown/pluginutils': 1.1.1
       es-module-lexer: 3.0.5
@@ -6873,19 +6873,19 @@ snapshots:
       srvx: 1.0.8
       strip-literal: 4.0.0
       turbo-stream: 3.2.1
-      vite: 8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
-      vitefu: 1.1.4(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
+      vite: 8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
+      vitefu: 1.1.4(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
     optionalDependencies:
-      react-server-dom-webpack: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1))
+      react-server-dom-webpack: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7)))
 
-  '@vitest/mocker@5.1.1(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))':
+  '@vitest/mocker@5.1.1(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       '@vitest/spy': 5.1.1
       estree-walker: 3.0.3
       magic-string: 1.4.5
     optionalDependencies:
-      vite: 8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
 
   '@vitest/spy@5.1.1': {}
 
@@ -6993,9 +6993,9 @@ snapshots:
 
   acorn@8.19.0: {}
 
-  agent-base@6.0.2:
+  agent-base@6.0.2(supports-color@10.2.2):
     dependencies:
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -7005,8 +7005,8 @@ snapshots:
     dependencies:
       humanize-ms: 1.2.1
 
-  ajv-formats@3.0.1(ajv@8.20.0):
-    optionalDependencies:
+  ajv-formats@3.0.1:
+    dependencies:
       ajv: 8.20.0
 
   ajv-keywords@5.1.0(ajv@8.20.0):
@@ -7191,9 +7191,9 @@ snapshots:
 
   baseline-browser-mapping@2.11.33: {}
 
-  bcrypt@5.1.1:
+  bcrypt@5.1.1(supports-color@10.2.2):
     dependencies:
-      '@mapbox/node-pre-gyp': 1.0.11
+      '@mapbox/node-pre-gyp': 1.0.11(supports-color@10.2.2)
       node-addon-api: 5.1.0
     transitivePeerDependencies:
       - encoding
@@ -7404,17 +7404,23 @@ snapshots:
       es-errors: 1.3.0
       is-data-view: 1.0.2
 
-  debug@3.2.7:
+  debug@3.2.7(supports-color@10.2.2):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 10.2.2
 
-  debug@4.3.4:
+  debug@4.3.4(supports-color@10.2.2):
     dependencies:
       ms: 2.1.2
+    optionalDependencies:
+      supports-color: 10.2.2
 
-  debug@4.4.3:
+  debug@4.4.3(supports-color@10.2.2):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 10.2.2
 
   deep-is@0.1.4: {}
 
@@ -7674,18 +7680,18 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-next@16.4.3(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3))(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3):
+  eslint-config-next@16.4.3(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3))(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3):
     dependencies:
-      '@next/eslint-plugin-next': 16.4.3(eslint@10.13.0(jiti@1.21.7))
-      eslint: 10.13.0(jiti@1.21.7)
-      eslint-import-resolver-node: 0.3.10
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@10.13.0(jiti@1.21.7))
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3))(eslint-import-resolver-typescript@3.10.1)(eslint@10.13.0(jiti@1.21.7))
-      eslint-plugin-jsx-a11y: 6.10.2(eslint@10.13.0(jiti@1.21.7))
-      eslint-plugin-react: 7.37.5(eslint@10.13.0(jiti@1.21.7))
-      eslint-plugin-react-hooks: 7.1.1(eslint@10.13.0(jiti@1.21.7))
+      '@next/eslint-plugin-next': 16.4.3(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
+      eslint-import-resolver-node: 0.3.10(supports-color@10.2.2)
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3))(eslint-import-resolver-typescript@3.10.1)(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)
+      eslint-plugin-jsx-a11y: 6.10.2(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))
+      eslint-plugin-react: 7.37.5(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))
+      eslint-plugin-react-hooks: 7.1.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)
       globals: 16.4.0
-      typescript-eslint: 8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)
+      typescript-eslint: 8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)
     optionalDependencies:
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -7694,52 +7700,52 @@ snapshots:
       - eslint-plugin-import-x
       - supports-color
 
-  eslint-import-resolver-node@0.3.10:
+  eslint-import-resolver-node@0.3.10(supports-color@10.2.2):
     dependencies:
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@10.2.2)
       is-core-module: 2.17.0
       resolve: 2.0.0-next.7
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0)(eslint@10.13.0(jiti@1.21.7)):
+  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0)(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
-      debug: 4.4.3
-      eslint: 10.13.0(jiti@1.21.7)
+      debug: 4.4.3(supports-color@10.2.2)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       get-tsconfig: 4.14.3
       is-bun-module: 2.0.0
       stable-hash: 0.0.5
       tinyglobby: 0.2.17
       unrs-resolver: 1.12.2
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3))(eslint-import-resolver-typescript@3.10.1)(eslint@10.13.0(jiti@1.21.7))
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3))(eslint-import-resolver-typescript@3.10.1)(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.14.0(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3))(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@3.10.1)(eslint@10.13.0(jiti@1.21.7)):
+  eslint-module-utils@2.14.0(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3))(eslint-import-resolver-node@0.3.10(supports-color@10.2.2))(eslint-import-resolver-typescript@3.10.1)(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2):
     dependencies:
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@10.2.2)
     optionalDependencies:
-      '@typescript-eslint/parser': 8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)
-      eslint: 10.13.0(jiti@1.21.7)
-      eslint-import-resolver-node: 0.3.10
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@10.13.0(jiti@1.21.7))
+      '@typescript-eslint/parser': 8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
+      eslint-import-resolver-node: 0.3.10(supports-color@10.2.2)
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3))(eslint-import-resolver-typescript@3.10.1)(eslint@10.13.0(jiti@1.21.7)):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3))(eslint-import-resolver-typescript@3.10.1)(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.2.0
       array.prototype.findlastindex: 1.2.6
       array.prototype.flat: 1.3.3
       array.prototype.flatmap: 1.3.3
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@10.2.2)
       doctrine: 2.1.0
-      eslint: 10.13.0(jiti@1.21.7)
-      eslint-import-resolver-node: 0.3.10
-      eslint-module-utils: 2.14.0(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3))(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@3.10.1)(eslint@10.13.0(jiti@1.21.7))
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
+      eslint-import-resolver-node: 0.3.10(supports-color@10.2.2)
+      eslint-module-utils: 2.14.0(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3))(eslint-import-resolver-node@0.3.10(supports-color@10.2.2))(eslint-import-resolver-typescript@3.10.1)(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)
       hasown: 2.0.4
       is-core-module: 2.17.0
       is-glob: 4.0.3
@@ -7751,13 +7757,13 @@ snapshots:
       string.prototype.trimend: 1.0.10
       tsconfig-paths: 3.15.0
     optionalDependencies:
-      '@typescript-eslint/parser': 8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jsx-a11y@6.10.2(eslint@10.13.0(jiti@1.21.7)):
+  eslint-plugin-jsx-a11y@6.10.2(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2)):
     dependencies:
       aria-query: 5.3.2
       array-includes: 3.2.0
@@ -7767,7 +7773,7 @@ snapshots:
       axobject-query: 4.1.0
       damerau-levenshtein: 1.0.8
       emoji-regex: 9.2.2
-      eslint: 10.13.0(jiti@1.21.7)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       hasown: 2.0.4
       jsx-ast-utils: 3.3.5
       language-tags: 1.0.9
@@ -7776,18 +7782,18 @@ snapshots:
       safe-regex-test: 1.1.0
       string.prototype.includes: 2.0.1
 
-  eslint-plugin-react-hooks@7.1.1(eslint@10.13.0(jiti@1.21.7)):
+  eslint-plugin-react-hooks@7.1.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2):
     dependencies:
-      '@babel/core': 7.29.7
+      '@babel/core': 7.29.7(supports-color@10.2.2)
       '@babel/parser': 7.29.11
-      eslint: 10.13.0(jiti@1.21.7)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       hermes-parser: 0.25.1
       zod: 3.25.76
       zod-validation-error: 4.0.2(zod@3.25.76)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-react@7.37.5(eslint@10.13.0(jiti@1.21.7)):
+  eslint-plugin-react@7.37.5(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2)):
     dependencies:
       array-includes: 3.2.0
       array.prototype.findlast: 1.2.5
@@ -7795,7 +7801,7 @@ snapshots:
       array.prototype.tosorted: 1.1.4
       doctrine: 2.1.0
       es-iterator-helpers: 1.4.0
-      eslint: 10.13.0(jiti@1.21.7)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       estraverse: 5.3.0
       hasown: 2.0.4
       jsx-ast-utils: 3.3.5
@@ -7820,11 +7826,11 @@ snapshots:
 
   eslint-visitor-keys@5.0.1: {}
 
-  eslint@10.13.0(jiti@1.21.7):
+  eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2):
     dependencies:
-      '@eslint-community/eslint-utils': 4.10.1(eslint@10.13.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))
       '@eslint-community/regexpp': 4.12.2
-      '@eslint/config-array': 0.23.5
+      '@eslint/config-array': 0.23.5(supports-color@10.2.2)
       '@eslint/config-helpers': 0.7.0
       '@eslint/core': 1.2.1
       '@eslint/plugin-kit': 0.7.3
@@ -7834,7 +7840,7 @@ snapshots:
       '@types/estree': 1.0.9
       ajv: 6.15.0
       cross-spawn: 7.0.6
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       escape-string-regexp: 4.0.0
       eslint-scope: 9.1.2
       eslint-visitor-keys: 5.0.1
@@ -8189,17 +8195,17 @@ snapshots:
       statuses: 1.5.0
       toidentifier: 1.0.0
 
-  https-proxy-agent@5.0.1:
+  https-proxy-agent@5.0.1(supports-color@10.2.2):
     dependencies:
-      agent-base: 6.0.2
-      debug: 4.4.3
+      agent-base: 6.0.2(supports-color@10.2.2)
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@7.0.6:
+  https-proxy-agent@7.0.6(supports-color@10.2.2):
     dependencies:
       agent-base: 7.1.4
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -8621,15 +8627,17 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  minimizer-webpack-plugin@5.14.1(esbuild@0.28.2)(postcss@8.5.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)):
+  minimizer-webpack-plugin@5.14.1(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))):
     dependencies:
       jest-worker: 27.5.1
-      schema-utils: 4.8.5(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1))
+      schema-utils: 4.8.5(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7)))
       terser: 5.51.4
-      webpack: 5.113.0(esbuild@0.28.2)(postcss@8.5.1)
+      webpack: 5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))
     optionalDependencies:
       esbuild: 0.28.2
+      lightningcss: 1.33.0
       postcss: 8.5.1
+      sharp: 0.35.5(@types/node@22.10.7)
 
   minipass@3.3.6:
     dependencies:
@@ -8678,13 +8686,13 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-auth@5.0.0-beta.25(next@16.4.6(@babel/core@7.29.7)(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1):
+  next-auth@5.0.0-beta.25(next@16.4.6(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1):
     dependencies:
       '@auth/core': 0.37.2
-      next: 16.4.6(@babel/core@7.29.7)(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      next: 16.4.6(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       react: 19.3.1
 
-  next@16.4.6(@babel/core@7.29.7)(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
+  next@16.4.6(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
     dependencies:
       '@next/env': 16.4.6
       '@swc/helpers': 0.5.23
@@ -8693,7 +8701,7 @@ snapshots:
       postcss: 8.5.23
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
-      styled-jsx: 5.1.6(@babel/core@7.29.7)(react@19.3.1)
+      styled-jsx: 5.1.6(@babel/core@7.29.7(supports-color@10.2.2))(react@19.3.1)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.4.6
       '@next/swc-darwin-x64': 16.4.6
@@ -8709,9 +8717,9 @@ snapshots:
       - '@types/node'
       - babel-plugin-macros
 
-  nock@15.0.6:
+  nock@15.0.6(supports-color@10.2.2):
     dependencies:
-      '@mswjs/interceptors': 0.45.12
+      '@mswjs/interceptors': 0.45.12(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -9075,13 +9083,13 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)):
+  react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))):
     dependencies:
       acorn-loose: 8.5.2
       neo-async: 2.6.2
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
-      webpack: 5.113.0(esbuild@0.28.2)(postcss@8.5.1)
+      webpack: 5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))
       webpack-sources: 3.7.1
 
   react@19.3.1: {}
@@ -9225,11 +9233,11 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sandbox@4.11.1:
+  sandbox@4.11.1(supports-color@10.2.2):
     dependencies:
       '@vercel/sandbox': 3.9.1
       async-retry: 1.3.3
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       ws: 8.22.2
       zod: 4.6.7
     transitivePeerDependencies:
@@ -9259,14 +9267,14 @@ snapshots:
 
   scheduler@0.28.0: {}
 
-  schema-utils@4.8.5(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)):
+  schema-utils@4.8.5(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))):
     dependencies:
       '@types/json-schema': 7.0.15
       ajv: 8.20.0
-      ajv-formats: 3.0.1(ajv@8.20.0)
+      ajv-formats: 3.0.1
       ajv-keywords: 5.1.0(ajv@8.20.0)
     optionalDependencies:
-      webpack: 5.113.0(esbuild@0.28.2)(postcss@8.5.1)
+      webpack: 5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))
 
   semver@6.3.1: {}
 
@@ -9485,12 +9493,12 @@ snapshots:
     dependencies:
       js-tokens: 10.0.1
 
-  styled-jsx@5.1.6(@babel/core@7.29.7)(react@19.3.1):
+  styled-jsx@5.1.6(@babel/core@7.29.7(supports-color@10.2.2))(react@19.3.1):
     dependencies:
       client-only: 0.0.1
       react: 19.3.1
     optionalDependencies:
-      '@babel/core': 7.29.7
+      '@babel/core': 7.29.7(supports-color@10.2.2)
 
   sucrase@3.35.1:
     dependencies:
@@ -9696,13 +9704,13 @@ snapshots:
       possible-typed-array-names: 1.1.0
       reflect.getprototypeof: 1.0.10
 
-  typescript-eslint@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3):
+  typescript-eslint@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.72.1(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3))(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)
-      '@typescript-eslint/parser': 8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)
-      '@typescript-eslint/typescript-estree': 8.72.1(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.72.1(eslint@10.13.0(jiti@1.21.7))(typescript@5.7.3)
-      eslint: 10.13.0(jiti@1.21.7)
+      '@typescript-eslint/eslint-plugin': 8.72.1(@typescript-eslint/parser@8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3))(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)
+      '@typescript-eslint/typescript-estree': 8.72.1(supports-color@10.2.2)(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.72.1(eslint@10.13.0(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.7.3)
+      eslint: 10.13.0(jiti@1.21.7)(supports-color@10.2.2)
       typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
@@ -9815,10 +9823,10 @@ snapshots:
 
   uuid@8.0.0: {}
 
-  vercel@65.14.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2):
+  vercel@65.14.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(supports-color@10.2.2):
     dependencies:
       '@vercel/cli-config': 0.3.8
-      '@vercel/cli-support': 65.14.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)
+      '@vercel/cli-support': 65.14.0(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)(supports-color@10.2.2)
     optionalDependencies:
       '@vercel/vc-native-darwin-arm64': 65.14.0
       '@vercel/vc-native-darwin-x64': 65.14.0
@@ -9840,22 +9848,22 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  vinext@1.4.6(@types/node@22.10.7)(@vitejs/plugin-react@6.3.0(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(@vitejs/plugin-rsc@0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)))(react@19.3.1)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(next@16.4.6(@babel/core@7.29.7)(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)))(react@19.3.1)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)):
+  vinext@1.4.6(@types/node@22.10.7)(@vitejs/plugin-react@6.3.0(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(@vitejs/plugin-rsc@0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))))(react@19.3.1)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))(next@16.4.6(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))))(react@19.3.1)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)):
     dependencies:
-      '@unpic/react': 1.0.2(next@16.4.6(@babel/core@7.29.7)(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@unpic/react': 1.0.2(next@16.4.6(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.10.7)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@vercel/og': 1.0.3(@types/node@22.10.7)
       '@vinext/types': 1.0.2
-      '@vitejs/plugin-react': 6.3.0(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
+      '@vitejs/plugin-react': 6.3.0(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
       ipaddr.js: 2.5.0
       magic-string: 0.30.21
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
-      vite: 8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
       vite-plugin-commonjs: 0.10.4
       web-vitals: 4.2.4
     optionalDependencies:
-      '@vitejs/plugin-rsc': 0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1)))(react@19.3.1)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
-      react-server-dom-webpack: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1))
+      '@vitejs/plugin-rsc': 0.5.39(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))))(react@19.3.1)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
+      react-server-dom-webpack: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7)))
     transitivePeerDependencies:
       - '@types/node'
       - next
@@ -9873,7 +9881,7 @@ snapshots:
       fast-glob: 3.3.3
       magic-string: 0.30.21
 
-  vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1):
+  vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
@@ -9889,14 +9897,14 @@ snapshots:
       tsx: 4.23.15
       yaml: 2.9.1
 
-  vitefu@1.1.4(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)):
+  vitefu@1.1.4(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)):
     optionalDependencies:
-      vite: 8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
 
-  vitest@5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)):
+  vitest@5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)):
     dependencies:
       '@types/chai': 5.2.3
-      '@vitest/mocker': 5.1.1(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
+      '@vitest/mocker': 5.1.1(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))
       chai: 6.3.0
       es-module-lexer: 2.3.2
       expect-type: 1.4.0
@@ -9907,7 +9915,7 @@ snapshots:
       tinybench: 6.2.4
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
-      vite: 8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)
       why-is-node-running: 3.2.1
     optionalDependencies:
       '@edge-runtime/vm': 3.2.0
@@ -9929,7 +9937,7 @@ snapshots:
 
   webpack-sources@3.7.1: {}
 
-  webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1):
+  webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7)):
     dependencies:
       '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
@@ -9942,8 +9950,8 @@ snapshots:
       events: 3.3.0
       graceful-fs: 4.2.11
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.14.1(esbuild@0.28.2)(postcss@8.5.1)(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1))
-      schema-utils: 4.8.5(webpack@5.113.0(esbuild@0.28.2)(postcss@8.5.1))
+      minimizer-webpack-plugin: 5.14.1(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7))(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7)))
+      schema-utils: 4.8.5(webpack@5.113.0(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.1)(sharp@0.35.5(@types/node@22.10.7)))
       tapable: 2.3.4
       watchpack: 2.6.4
       webpack-sources: 3.7.1
@@ -10031,11 +10039,11 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20261123.1
       '@cloudflare/workerd-windows-64': 1.20261123.1
 
-  wrangler@4.168.0(@types/node@22.10.7)(vitest@5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))):
+  wrangler@4.168.0(@types/node@22.10.7)(vitest@5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1))):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.5.1
       '@cloudflare/unenv-preset': 2.16.2(unenv@2.0.0-rc.24)(workerd@1.20261123.1)
-      '@cloudflare/workers-utils': 0.57.0(vitest@5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.0(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))
+      '@cloudflare/workers-utils': 0.57.0(vitest@5.1.1(@edge-runtime/vm@3.2.0)(@types/node@22.10.7)(vite@8.3.3(@types/node@22.10.7)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.4)(tsx@4.23.15)(yaml@2.9.1)))
       '@cspotcode/source-map-support': 0.8.1
       '@types/yargs': 17.0.24
       cloudflare: 5.2.0
