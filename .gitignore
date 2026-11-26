@@ -34,3 +34,5 @@ next-env.d.ts
 
 # Vitest reports and artifacts
 .vitest/
+
+.prettier.rc
