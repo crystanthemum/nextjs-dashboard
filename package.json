@@ -26,7 +26,7 @@
     "next-auth": "5.0.0-beta.25",
     "nock": "^15.0.6",
     "node": "27.0.0-alpha.0.1.1",
-    "postcss": "8.5.1",
+    "postcss": "8.5.23",
     "postgres": "^3.4.6",
     "react": "latest",
     "react-dom": "latest",
