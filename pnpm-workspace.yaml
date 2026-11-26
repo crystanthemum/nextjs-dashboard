@@ -8,3 +8,4 @@ allowBuilds:
   bcrypt: true
   esbuild: true
   unrs-resolver: true
+ignore-workspace-root-check: true
